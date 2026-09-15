@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Intelligence OS",
+  "version": "0.7.2",
+  "description": "Browser sensor and interface for the Intelligence OS Cognitive Core.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel",
+    "contextMenus",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*",
+    "http://localhost:8765/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open Intelligence OS"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "options_page": "options.html",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqmxJ258Zm0KtWJMTnQTeabb6i2dAMns+7rq3awZB78dZZ/6hSNRaucKevUEN7GI0i7Y9KDDKUlMsDBE9kQyMiijBVygLcL7w5BX2aQpasJ0m4sHBTF3/FF43+Gak4WAkeFI0Di5DTYr50kGcCHZpKT1GfakRvzuurZrmUtn2sUFA0VKqS/onQ07Eb/1ZA8LV2UJEGJunDBSbJjZX9I/JE+Vn0k5u0g2Gzxs4fwFpL/AWO8KKn7mhjpGfjbygk6GQHa1jbhQNIDhmSkDsjj9EaNT2Bsf+gHOV2Jcu3raTa/GfRz3nS8LkuiFpYGveIVjpi8B9ZMEEX1aVsOT2bpXSPQIDAQAB"
+}

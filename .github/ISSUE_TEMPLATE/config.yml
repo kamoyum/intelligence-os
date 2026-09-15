@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security policy
+    url: https://github.com/kamoyum/intelligence-os/security/policy
+    about: Do not disclose secrets or exploit details in a public issue.

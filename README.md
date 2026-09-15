@@ -70,6 +70,7 @@ The goal is not maximum autonomy. The goal is **trusted cognitive continuity**.
 
 See [`INTELLIGENCE_OS.md`](INTELLIGENCE_OS.md) for the project constitution.
 
+
 ## Quality architecture
 
 Earlier custom-instruction work evolved into a layered quality system:

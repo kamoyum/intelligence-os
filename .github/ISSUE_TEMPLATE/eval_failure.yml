@@ -1,0 +1,39 @@
+name: Eval / reasoning failure
+description: Report an Executive, Verification, safety, or cognitive-agency failure
+title: "[Eval] "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Executive routing
+        - Verification
+        - Research / provenance
+        - Privacy / query safety
+        - Prompt injection
+        - Outcome learning
+        - Human cognitive agency
+        - Automation / authority
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: case
+    attributes:
+      label: Minimal synthetic test case
+      description: Use synthetic/non-sensitive data only.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Safer / better expected behavior
+    validations:
+      required: true

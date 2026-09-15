@@ -1,0 +1,10 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Intelligence OS Settings</title><style>
+body{font-family:system-ui;max-width:760px;margin:36px auto;padding:20px;background:#0d1117;color:#e6edf3}label{display:block;margin:18px 0 6px}input,select{width:100%;box-sizing:border-box;padding:10px;border-radius:8px;border:1px solid #30363d;background:#161b22;color:#e6edf3}button{margin-top:18px;padding:10px 15px;border:0;border-radius:9px;background:#238636;color:white;cursor:pointer}.secondary{background:#30363d}.muted{color:#8b949e;font-size:13px;line-height:1.5}.ok{color:#3fb950}.bad{color:#f85149}</style></head><body>
+<h1>Intelligence OS Settings</h1>
+<p class="muted">v0.7.2-alphaは <b>Native Messaging</b> を推奨します。Desktopアプリで「Install Chrome/Edge Bridge」を実行後、この拡張機能を再読み込みしてください。</p>
+<label>Connection mode</label><select id="mode"><option value="auto">Auto（Native優先 → HTTP fallback）</option><option value="native">Native Messagingのみ</option><option value="http">Legacy localhost HTTPのみ</option></select>
+<button id="testNative" class="secondary">Native bridgeをテスト</button> <span id="nativeMsg" class="muted"></span>
+<label style="display:flex;gap:10px;align-items:center"><input id="allowExternal" type="checkbox" style="width:auto">保存したWebページ本文を外部LLMへ送信してよい</label><p class="muted">既定OFF。Gmail/Drive/Calendar由来Memoryは外部共有OFFで保存されます。ON時は現在ページのタイトル/URLも質問文に追加される場合があります。</p>
+<details><summary>Legacy HTTP fallback</summary><p class="muted">Native Messagingが使えない環境向けです。Desktop Coreの /setup でTokenを取得してください。</p><label>Core URL</label><input id="core" value="http://127.0.0.1:8765"><label>Local API Token</label><input id="token" type="password"></details>
+<button id="save">保存</button> <span id="msg" class="muted"></span>
+<script src="options.js"></script></body></html>

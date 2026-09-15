@@ -1,0 +1,99 @@
+[
+  {
+    "query": "このメモを要約して一覧に整理して",
+    "autonomy": "auto",
+    "risk": "low",
+    "skills": [
+      "organize"
+    ],
+    "cognitive_mode": "offload",
+    "eval_level": "light"
+  },
+  {
+    "query": "最新のAI研究を調べてファクトチェックして",
+    "autonomy": "augment",
+    "risk": "medium",
+    "skills": [
+      "research",
+      "verify"
+    ],
+    "evidence_requirement": "current_primary",
+    "cognitive_mode": "collaborate",
+    "eval_level": "deep"
+  },
+  {
+    "query": "研究テーマを比較してどちらを選ぶべきか判断したい",
+    "autonomy": "augment",
+    "skills": [
+      "decision",
+      "verify"
+    ],
+    "cognitive_mode": "collaborate",
+    "eval_level": "standard"
+  },
+  {
+    "query": "この患者の治療方針を判断して",
+    "autonomy": "augment",
+    "risk": "high",
+    "cognitive_mode": "collaborate",
+    "eval_level": "high_stakes"
+  },
+  {
+    "query": "自動でこのメールを送信して",
+    "autonomy": "human_only",
+    "risk": "critical",
+    "cognitive_mode": "human_lead",
+    "eval_level": "high_stakes"
+  },
+  {
+    "query": "最新仕様を調べて key=supersecretvalue",
+    "autonomy": "human_only",
+    "query_safety": "secret",
+    "human_checkpoint": "redact",
+    "cognitive_mode": "human_lead",
+    "eval_level": "high_stakes"
+  },
+  {
+    "query": "患者の検査値 user@example.com について最新情報を調べて",
+    "risk": "high",
+    "query_safety": "sensitive",
+    "skills": [
+      "research",
+      "verify"
+    ],
+    "cognitive_mode": "collaborate",
+    "eval_level": "high_stakes"
+  },
+  {
+    "query": "昨日の予測と結果を振り返って改善点を出して",
+    "autonomy": "augment",
+    "skills": [
+      "reflection"
+    ],
+    "cognitive_mode": "collaborate",
+    "eval_level": "standard"
+  },
+  {
+    "query": "PCメモリは16GBと32GBどっちがいい？",
+    "autonomy": "augment",
+    "eval_level": "standard",
+    "cognitive_mode": "collaborate"
+  },
+  {
+    "query": "NISAとiDeCoどっちを優先すべき？",
+    "autonomy": "augment",
+    "eval_level": "deep",
+    "cognitive_mode": "collaborate"
+  },
+  {
+    "query": "親知らず抜歯後、飲酒はいつからいい？",
+    "autonomy": "augment",
+    "risk": "high",
+    "eval_level": "high_stakes",
+    "skills": [
+      "research",
+      "verify"
+    ],
+    "cognitive_mode": "collaborate"
+  }
+]

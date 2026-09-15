@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a reproducible functional problem
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, credentials, patient data, or other sensitive information. Use SECURITY.md for security-sensitive reports.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 0.7.2-alpha
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted logs or output
+      description: Remove tokens, personal data, credentials, and private content.
