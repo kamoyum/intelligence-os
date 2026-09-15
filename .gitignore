@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+backend/data/*
+!backend/data/.gitkeep
+backend/google_client_secret.json
+.env
+.DS_Store
+
+# local builds / release artifacts
+build/
+dist/
+*.zip
+*.spec
+
+# editor / OS
+.vscode/
+.idea/
+Thumbs.db
