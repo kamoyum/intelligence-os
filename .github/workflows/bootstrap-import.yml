@@ -5,6 +5,7 @@ on:
     branches: ["main"]
     paths:
       - "intelligence-os-v0.7.2-alpha-github.zip"
+      - ".github/workflows/bootstrap-import.yml"
   workflow_dispatch:
 
 permissions:
@@ -45,14 +46,17 @@ jobs:
           cd /tmp/intelligence-os-import
           python scripts/public_repo_audit.py
 
-      - name: Replace repository with canonical source
+      - name: Replace repository with canonical source except workflows
         if: steps.archive.outputs.present == 'true'
         shell: bash
         run: |
-          rsync -a --delete --exclude '.git/' /tmp/intelligence-os-import/ ./
+          rsync -a --delete \
+            --exclude '.git/' \
+            --exclude '.github/workflows/' \
+            /tmp/intelligence-os-import/ ./
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git status --short
-          git commit -m "release: publish Intelligence OS v0.7.2-alpha"
+          git commit -m "release: publish Intelligence OS v0.7.2-alpha core"
           git push origin HEAD:main
