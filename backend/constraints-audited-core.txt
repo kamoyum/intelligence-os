@@ -1,7 +1,7 @@
 # Core package versions used in the v0.7.2-alpha audit container.
 # These do NOT certify optional OpenAI/Google provider packages, which were unavailable for live install testing.
 fastapi==0.128.2
-uvicorn==0.48.0
+uvicorn==0.52.4
 pytest==9.0.2
 httpx==0.28.1
 pypdf==5.9.0
