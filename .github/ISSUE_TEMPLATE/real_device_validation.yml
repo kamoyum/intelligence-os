@@ -1,0 +1,32 @@
+name: Real-device validation
+ description: Report macOS, Windows, Chrome, Edge, or Native Messaging validation results
+ title: "[Validation] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use synthetic/non-sensitive data only. Do not include secrets, credentials, personal data, private logs, or exploit details. Report security-sensitive findings through [SECURITY.md](../../SECURITY.md).
+  - type: input
+    id: platform
+    attributes:
+      label: Platform and version
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Component tested
+      placeholder: Desktop, Chrome extension, Edge extension, Native Messaging
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What worked or failed?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps or logs
+      description: Redact sensitive content.

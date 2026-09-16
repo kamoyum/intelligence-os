@@ -1,0 +1,20 @@
+name: Documentation improvement
+description: Suggest a documentation correction, clarification, or addition
+title: "[Docs] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, credentials, or sensitive data. Security-sensitive documentation concerns should follow [SECURITY.md](../../SECURITY.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear, missing, or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: true
