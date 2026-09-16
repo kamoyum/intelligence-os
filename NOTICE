@@ -1,16 +1,4 @@
 Intelligence OS
+Copyright 2026 Intelligence OS contributors
 
-Copyright 2026 kamoyum
-
-This project is licensed under the Apache License, Version 2.0. See the `LICENSE` file.
-
-Intelligence OS is an experimental Developer Alpha. It is local-first, verification-centered, and designed around bounded automation and explicit human authority. It is not production-ready and must not be used with identifiable patient data, credentials, workplace secrets, or other sensitive production information.
-
-The repository's safety, threat-model, and contribution guidance remain authoritative:
-
-- `SECURITY.md`
-- `GOVERNANCE.md`
-- `CONTRIBUTING.md`
-- `docs/THREAT_MODEL.md`
-
-Third-party notices, if any, are documented here as the project evolves.
+Licensed under the Apache License, Version 2.0.

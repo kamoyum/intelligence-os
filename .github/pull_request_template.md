@@ -8,10 +8,15 @@ What is the smallest change being made?
 
 ## Evidence
 
-- [ ] Unit/regression tests added or updated
-- [ ] Relevant benchmark/simulation updated
-- [ ] Documentation updated if semantics changed
-- [ ] No secrets / personal / patient data included
+- [ ] Existing behavior is intentionally preserved or changes are explained
+- [ ] Tests were added or updated where appropriate
+- [ ] Evals were added or updated where appropriate
+- [ ] Privacy impact reviewed
+- [ ] Human authority impact reviewed
+- [ ] External data / network behavior reviewed
+- [ ] Rollback or failure behavior considered
+- [ ] No secrets or sensitive/private data included
+- [ ] Documentation updated if required
 
 ## Safety / authority impact
 
