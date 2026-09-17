@@ -1,6 +1,6 @@
 name: Real-device validation
- description: Report macOS, Windows, Chrome, Edge, or Native Messaging validation results
- title: "[Validation] "
+description: Report macOS, Windows, Chrome, Edge, or Native Messaging validation results
+title: "[Validation] "
 body:
   - type: markdown
     attributes:
