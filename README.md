@@ -1,8 +1,30 @@
 # Intelligence OS v0.7.2-alpha
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
 > **Experimental Personal Cognitive Infrastructure** — local-first memory, context, verification, outcome learning, and bounded automation designed to augment human thinking without silently expanding AI authority.
 
 **Status: Developer Alpha. Not production-ready.** Use synthetic or non-sensitive data only. Do **not** use identifiable patient data, workplace secrets, credentials, or other sensitive production information.
+
+## Looking for reviewers and contributors
+
+Intelligence OS is a Developer Alpha.
+
+We welcome:
+- architecture review
+- privacy and security review
+- safety review
+- eval design
+- red-team cases
+- failure cases
+- documentation improvements
+- macOS / Windows real-device validation
+- Chrome / Edge Native Messaging testing
+- accessibility and UX feedback
+
+Criticism is welcome. Finding a failure mode is a contribution.
+
+Contributions must not weaken privacy boundaries, human authority, verification requirements, rollback capability, or safety-limited development governance.
 
 ## 日本語サマリー
 
@@ -308,7 +330,9 @@ Do not post secrets, patient data, credentials, or exploit details in a public i
 
 ## License
 
-**No open-source license has been selected yet.** Public visibility does not imply permission to reuse, redistribute, or incorporate the code elsewhere beyond rights granted by GitHub's platform terms. Choose and add an explicit license before inviting broad downstream reuse.
+Intelligence OS is licensed under the Apache License 2.0.
+
+See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 ---
 

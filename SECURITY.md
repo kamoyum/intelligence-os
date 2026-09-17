@@ -12,19 +12,18 @@ Security fixes currently target the latest `0.7.x-alpha` source tree only.
 
 ## Reporting a vulnerability
 
+Security-sensitive reports include credentials, local tokens, authentication bypass, secret leakage, unauthorized external transmission, Native Messaging boundary violations, localhost boundary violations, unsafe automation, and authority bypass.
+
 Please **do not** open a public issue containing:
 
-- API keys, passwords, tokens, OAuth credentials
-- personal or patient information
-- exploit payloads that enable immediate compromise
-- private logs or databases
+- API keys, passwords, credentials, local tokens, or OAuth credentials
+- personal, patient, workplace, regulated, or other sensitive information
+- secret-leakage evidence or private logs/databases
+- authentication-bypass or authority-bypass details
+- exploit payloads or other details that enable immediate compromise
+- details of unauthorized external transmission, unsafe automation, or Native Messaging / localhost boundary violations
 
-Preferred reporting path:
-
-1. Use GitHub **Private Vulnerability Reporting** if it is enabled for the repository.
-2. If private reporting is not yet enabled, open a minimal public issue titled `Security: private disclosure requested` **without exploit details or sensitive data**, so the maintainer can establish a private channel.
-
-Until a private disclosure channel is configured, do not publish weaponizable details.
+Use GitHub **Private Vulnerability Reporting** if it is enabled for the repository. If private reporting is not yet enabled, open a minimal public issue titled `Security: private disclosure requested` **without secrets, credentials, sensitive data, exploit details, or weaponizable technical details**, so the maintainer can establish a private channel. Until a private disclosure channel is configured, do not publish weaponizable details.
 
 ## Core security invariants
 
@@ -73,7 +72,7 @@ Prompt-injection detection is a **secondary signal**, not a complete defense. Th
 
 ## External providers
 
-Optional OpenAI / Google integrations can transmit data outside the local machine. Use only non-sensitive data during alpha testing and review `docs/DATA_BOUNDARIES.md` before enabling them.
+Optional OpenAI / Google integrations can transmit data outside the local machine. Use only non-sensitive data during alpha testing and review `docs/DATA_BOUNDARIES.md` before enabling them. Unauthorized external transmission is a security-sensitive report; do not include transmitted secrets or sensitive payloads in a public issue.
 
 ## Production requirements not yet met
 

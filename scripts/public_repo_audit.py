@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED = [
-    'README.md', 'INTELLIGENCE_OS.md', 'SECURITY.md', 'CONTRIBUTING.md',
+    'README.md', 'LICENSE', 'NOTICE', 'INTELLIGENCE_OS.md', 'SECURITY.md', 'CONTRIBUTING.md',
     'GOVERNANCE.md', 'EVALS.md', 'KNOWN_LIMITATIONS.md', 'CHANGELOG.md',
     '.github/workflows/ci.yml', '.github/workflows/codeql.yml',
     'docs/STATUS.md', 'docs/THREAT_MODEL.md', 'docs/GITHUB_PUBLICATION_CHECKLIST.md',
@@ -37,8 +37,6 @@ for path in ROOT.rglob('*'):
     if any(part in FORBIDDEN_PARTS for part in rel.parts):
         continue
     if path.name in FORBIDDEN_NAMES or path.suffix in {'.pyc', '.pyo'}:
-        # Runtime files under backend/data are intentionally gitignored and may be
-        # created by local tests. Release/archive hygiene verifies they are never shipped.
         if rel.parts[:2] == ('backend', 'data') and path.name in FORBIDDEN_NAMES:
             continue
         errors.append(f'forbidden generated/sensitive artifact: {rel}')
@@ -60,7 +58,7 @@ if issue_cfg.exists() and 'OWNER/' in issue_cfg.read_text(encoding='utf-8'):
     errors.append('GitHub issue config still contains OWNER placeholder')
 
 readme = (ROOT / 'README.md').read_text(encoding='utf-8') if (ROOT/'README.md').exists() else ''
-for required_phrase in ('Developer Alpha', 'Capability ≠ authority', 'No open-source license has been selected yet'):
+for required_phrase in ('Developer Alpha', 'Capability ≠ authority', 'Apache License 2.0'):
     if required_phrase not in readme:
         errors.append(f'README missing public-boundary phrase: {required_phrase}')
 

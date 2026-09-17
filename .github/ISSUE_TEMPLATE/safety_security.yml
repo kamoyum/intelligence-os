@@ -1,0 +1,28 @@
+name: Safety / security concern
+description: Report a safety boundary or security concern without disclosing sensitive details
+title: "[Safety/Security] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Review [SECURITY.md](../../SECURITY.md) first. Do not post secrets, credentials, tokens, personal or sensitive data, private logs, exploit payloads, or weaponizable details in a public issue. Use private vulnerability reporting when available.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Redacted concern summary
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Affected boundary
+      description: For example privacy, external transmission, Native Messaging, localhost, unsafe automation, or human authority.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal synthetic reproduction
+      description: Remove all secrets and sensitive data.
+    validations:
+      required: true
