@@ -57,7 +57,7 @@ For capability or authority changes, also include the proposed Capability Gate s
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r backend/requirements.txt
 PYTHONPATH=backend pytest -q backend/tests
 ```
