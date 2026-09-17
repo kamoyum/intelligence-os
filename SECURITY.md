@@ -2,7 +2,7 @@
 
 ## Project status
 
-Intelligence OS is a **Developer Alpha**. It is not a production security boundary and is not approved for identifiable patient data, workplace secrets, regulated production data, or autonomous high-impact decisions.
+Intelligence OS is a **Developer Alpha**. It is not a production security boundary and is not approved for identifiable patient data, workplace secrets, regulated production data, or autonomous high-stakes decision making.
 
 The reference Core binds to `127.0.0.1`. **Do not expose the local API directly to a LAN or the public Internet.**
 
@@ -68,7 +68,7 @@ The local SQLite database is not encrypted at rest by the application itself.
 
 ## Prompt injection
 
-Prompt-injection detection is a **secondary signal**, not a complete defense. The primary boundary is architectural: retrieved content is treated as untrusted evidence/context, not as instruction.
+Prompt-injection detection is a **secondary signal**, not a complete defense. The primary boundary is architectural: retrieved content is treated as untrusted evidence/context, not as instruction authority.
 
 ## External providers
 
