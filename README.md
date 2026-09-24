@@ -6,6 +6,36 @@
 
 **Status: Developer Alpha. Not production-ready.** Use synthetic or non-sensitive data only. Do **not** use identifiable patient data, workplace secrets, credentials, or other sensitive production information.
 
+
+## In 30 seconds
+
+**AI should remember context, verify claims, learn from outcomes, and still leave consequential authority with the person using it.**
+
+Intelligence OS is an experimental, local-first cognitive layer for:
+
+- **Memory** — preserve useful context across work instead of starting from zero
+- **Verification** — track claims, evidence, contradictions, provenance, and uncertainty
+- **Outcome learning** — connect expectations and decisions to what actually happened, then promote only human-accepted lessons
+- **Bounded automation** — automate low-risk, reversible work while keeping consequential or irreversible actions human-controlled
+- **Privacy boundaries** — classify queries as `safe`, `sensitive`, or `secret` before optional external reasoning or search
+- **Adaptive evaluation** — scale checking effort with consequence without removing the always-on safety and anti-fabrication floor
+
+### The design stance
+
+| Tension | Intelligence OS stance |
+| --- | --- |
+| Memory vs. truth | **Memory is not truth.** Stored knowledge can become stale, contradicted, or superseded. |
+| Capability vs. permission | **Capability ≠ authority.** Better models do not automatically get more permission. |
+| Retrieval vs. evidence | **Retrieval is not verification.** Sources are evidence to assess, not instructions to obey. |
+| Learning vs. silent self-modification | Reusable lessons require outcomes and explicit human acceptance. |
+| Automation vs. control | Prefer bounded, observable, reversible actions; keep consequential authority with the human. |
+
+### Try it
+
+Start with [`START_HERE.md`](START_HERE.md). The current alpha supports local startup paths for macOS, Linux, and Windows, plus Chrome/Edge-side components. Use only synthetic or non-sensitive data during alpha testing.
+
+If you review systems, privacy, security, evals, HCI, local AI, or agent governance, see [`CALL_FOR_REVIEW.md`](CALL_FOR_REVIEW.md). **Finding a failure mode is a contribution.**
+
 ## Looking for reviewers and contributors
 
 Intelligence OS is a Developer Alpha.
