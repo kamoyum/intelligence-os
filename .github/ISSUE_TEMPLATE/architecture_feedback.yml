@@ -1,0 +1,26 @@
+name: Architecture / design feedback
+description: Propose or critique an architecture, governance, or bounded feature change
+title: "[Design] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, credentials, private data, or sensitive logs. Security-sensitive details belong in [SECURITY.md](../../SECURITY.md).
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal or design question
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale and alternatives
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Privacy, authority, verification, and rollback impact
+    validations:
+      required: true

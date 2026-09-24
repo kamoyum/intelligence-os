@@ -1,7 +1,11 @@
-name: Eval / reasoning failure
+name: Eval / red-team case
 description: Report an Executive, Verification, safety, or cognitive-agency failure
 title: "[Eval] "
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Use synthetic/non-sensitive data only. For security-sensitive concerns, follow [SECURITY.md](../../SECURITY.md). Never post secrets, credentials, sensitive data, private logs, or exploit details publicly.
   - type: dropdown
     id: area
     attributes:

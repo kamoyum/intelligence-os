@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Do not include secrets, credentials, patient data, or other sensitive information. Use SECURITY.md for security-sensitive reports.
+        Do not include secrets, credentials, tokens, patient data, private logs, or other sensitive information. Security-sensitive concerns—including authentication bypass, secret leakage, unauthorized external transmission, Native Messaging or localhost boundary violations, unsafe automation, and authority bypass—must follow [SECURITY.md](../../SECURITY.md), not a public issue.
   - type: input
     id: version
     attributes:
@@ -35,4 +35,4 @@ body:
     id: logs
     attributes:
       label: Redacted logs or output
-      description: Remove tokens, personal data, credentials, and private content.
+      description: Remove tokens, credentials, personal data, private content, and exploit details.
